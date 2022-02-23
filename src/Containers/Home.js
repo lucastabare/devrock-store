@@ -1,10 +1,18 @@
 import React from "react";
+import "../Assets/css/Home.css";
+import Item from "../Componets/Item";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function () {
   return (
-    <div>
-      {" "}
-      <h1>soy el home</h1>
-    </div>
+    <>
+      <div className="container">
+        <div className="wraper">
+          <div className="home">
+            <Item></Item>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
