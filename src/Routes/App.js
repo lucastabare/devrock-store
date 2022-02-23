@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../Containers/Home";
-import Carrito from "../Containers/Carrito";
-import Producto from "../Containers/Producto";
-import Layout from "../Componets/Layout";
+import Home from "../containers/Home";
+import Carrito from "../containers/Carrito";
+import Producto from "../containers/Producto";
+import Layout from "../componets/Layout";
 
 function App() {
   return (

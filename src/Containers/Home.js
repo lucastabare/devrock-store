@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/css/Home.css";
-import Item from "../Componets/Item";
+import Item from "../componets/Item";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function () {

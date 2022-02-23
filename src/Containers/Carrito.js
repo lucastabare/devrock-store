@@ -1,13 +1,18 @@
 import React from "react";
 import "../Assets/css/Carrito.css";
-import ItemCarrito from "../Componets/ItemCarrito";
+import ItemCarrito from "../componets/ItemCarrito";
 
 export default function Carrito() {
   return (
     <>
       <div className="carrito">
-        <div className="carrito-listadito"></div>
-        <ItemCarrito></ItemCarrito>
+        <div className="carrito-listadito">
+          <ItemCarrito></ItemCarrito>
+        </div>
+        <div className="carrito-precio">
+          Total a pagar <br />
+          <strong>U$D 3400 </strong>
+        </div>
       </div>
     </>
   );
