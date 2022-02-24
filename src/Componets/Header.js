@@ -1,16 +1,17 @@
 import React from "react";
 import iconCarrito from "../Assets/statics/carrito.png";
 import iconVolver from "../Assets/statics/volver.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <>
-      <a href="carrito.html">
+      <Link to="/carrito">
         <img src={iconCarrito} alt="" className="carritou" />
-      </a>
-      <a href="/">
+      </Link>
+      <Link to="/">
         <img src={iconVolver} alt="" className="volver" />
-      </a>
+      </Link>
       <h1 className="titulo">
         Dev <br />
         RockStore

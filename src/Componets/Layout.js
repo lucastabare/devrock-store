@@ -6,9 +6,9 @@ export default function Layout(props) {
   const { children } = props;
   return (
     <>
-      <Header />
+      <Header></Header>
       {children}
-      <Footer />
+      <Footer></Footer>
     </>
   );
 }

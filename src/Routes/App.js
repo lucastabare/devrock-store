@@ -3,6 +3,7 @@ import Home from "../containers/Home";
 import Carrito from "../containers/Carrito";
 import Producto from "../containers/Producto";
 import Layout from "../componets/Layout";
+import UsarContex from "../contex/UsarContex";
 
 function App() {
   return (
@@ -15,13 +16,15 @@ function App() {
       /> */}
 
       <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/carrito" element={<Carrito />} />
-            <Route exact path="/producto" element={<Producto />} />
-          </Routes>
-        </Layout>
+        <UsarContex>
+          <Layout>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/carrito" element={<Carrito />} />
+              <Route exact path="/producto" element={<Producto />} />
+            </Routes>
+          </Layout>
+        </UsarContex>
       </BrowserRouter>
     </>
   );
